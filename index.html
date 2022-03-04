@@ -29,28 +29,49 @@
       <section class="secaoDetalhesConta">
         <div class="container">
           <div class="secaoDetalhesConta__sobreUsuario">
-            <img src="./assets/img/usuario.png" alt="Ícone do usuário" />
-            <p>Olá, <strong>@winymaciel</strong></p>
+            <div class="secaoDetalhesConta__sobreUsuario--nome">
+              <img src="./assets/img/usuario.png" alt="Ícone do usuário" />
+              <p>Olá, <strong>@winymaciel</strong></p>
+            </div>
+            <div class="secaoDetalhesConta__sobreUsuario--icones"> 
+              <img src="./assets/img/presente.png" alt="Icone Presente">
+              <img src="./assets/img/chat.png" alt="Icone Chat">
+            </div>
           </div>
+          
           <div class="secaoDetalhesConta__sobreSaldo">
-            <p>Saldo PicPay <strong>R$ 0,00</strong></p>
+            <div>
+              <p>Saldo PicPay</p>
+              <div class="secaoDetalhesConta__sobreSaldo--valor">
+                <p>R$ 10.000</p>
+                <img src="./assets/img/visualizar.png" alt="Icone Visualizar">
+              </div>
+            </div>
             <button>Extrato</button>
           </div>
           <ul class="secaoDetalhesConta__opcoesTransacoes">
-            <li class="secaoDetalhesConta__itemTransacao" id="1">
-              <img src="assets/img/qrcode.png" alt="Ícone QR Code" />
+            <li class="secaoDetalhesConta__itemTransacao secaoDetalhesConta__itemTransacao--qrCode" id="1">
+              <figure>
+                <img src="assets/img/qrcode.png" alt="Ícone QR Code" />
+              </figure>
               <p>QR Code</p>
             </li>
-            <li class="secaoDetalhesConta__itemTransacao" id="2">
-              <img src="assets/img/pix.png" alt="Ícone Pix" />
+            <li class="secaoDetalhesConta__itemTransacao secaoDetalhesConta__itemTransacao--pix" id="2">
+              <figure>
+                <img src="assets/img/pix.png" alt="Ícone Pix" />
+              </figure>
               <p>Pix</p>
             </li>
-            <li class="secaoDetalhesConta__itemTransacao" id="3">
-              <img src="assets/img/codigo.png" alt="Ícone boleto" />
+            <li class="secaoDetalhesConta__itemTransacao secaoDetalhesConta__itemTransacao--boleto" id="3">
+              <figure>
+                <img src="assets/img/codigo.png" alt="Ícone boleto" />
+              </figure>
               <p>Pagar Boleto</p>
             </li>
-            <li class="secaoDetalhesConta__itemTransacao" id="4">
-              <img src="assets/img/cobrar-icon.png" alt="Ícone cobrar" />
+            <li class="secaoDetalhesConta__itemTransacao secaoDetalhesConta__itemTransacao--cobrar" id="4">
+              <figure>
+                <img src="assets/img/cobrar-icon.png" alt="Ícone cobrar" />
+              </figure>
               <p>Cobrar</p>
             </li>
           </ul>

@@ -1,5 +1,5 @@
 body {
-  background-color: #4a8864;
+  background-color: #228664;
   font-family: "Poppins", sans-serif;
 }
 
@@ -38,6 +38,17 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.secaoDetalhesConta__sobreUsuario--nome, 
+.secaoDetalhesConta__sobreUsuario--icones {
+  display: flex;
+  align-items: center;
+}
+
+.secaoDetalhesConta__sobreUsuario--icones img {
+  margin: 0 10px;
 }
 
 .secaoDetalhesConta__sobreUsuario p {
@@ -63,14 +74,24 @@ font-weight: bold;
   align-items: center;
 }
 
+.secaoDetalhesConta__sobreSaldo--valor {
+  display: flex;
+}
+
 .secaoDetalhesConta__sobreSaldo p {
   font-size: 18px;
   line-height: 22px;
+} 
+
+.secaoDetalhesConta__sobreSaldo--valor p {
+  font-weight: 600;
 }
 
-.secaoDetalhesConta__sobreSaldo p strong {
+.secaoDetalhesConta__sobreSaldo--valor img {
   display: block;
-  font-weight: 600;
+  height: 18px;
+  width: 30px;
+  margin-left: 12px;
 }
 
 .secaoDetalhesConta__sobreSaldo button {
@@ -282,4 +303,65 @@ font-weight: bold;
 
 .rodape__menuPrincipal .rodape__menuItem--pagar a img {
   max-width: 80px;
+}
+
+.secaoDetalhesConta__itemTransacao:hover {
+  background-color: #fff;
+  color: #228664;
+}
+
+.secaoDetalhesConta__itemTransacao figure {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.secaoDetalhesConta__itemTransacao--qrCode figure {
+  background-image: url(../img/qrcode.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.secaoDetalhesConta__itemTransacao--pix figure {
+  background-image: url(../img/pix.png);
+}
+
+.secaoDetalhesConta__itemTransacao--boleto figure {
+  background-image: url(../img/codigo.png);
+  width: 100%;
+  max-width: 65px;
+}
+
+.secaoDetalhesConta__itemTransacao--cobrar figure {
+  background-image: url(../img/cobrar-icon.png);
+  width: 100%;
+  max-width: 60px;
+}
+
+.secaoDetalhesConta__itemTransacao:hover figure {
+  background-image: url(../img/qrcode-verde.png);
+}
+
+.secaoDetalhesConta__itemTransacao--pix:hover figure {
+  background-image: url(../img/pix-verde.png);
+}
+
+.secaoDetalhesConta__itemTransacao--boleto:hover figure {
+  background-image: url(../img/boleto-verde.png);
+}
+
+.secaoDetalhesConta__itemTransacao--cobrar:hover figure {
+  background-image: url(../img/cobrar-verde.png);
+}
+
+.secaoDetalhesConta__itemTransacao figure img {
+  width: 100%;
+  max-width: 25px;
+  height: 20px;
+  opacity: 0;
 }
